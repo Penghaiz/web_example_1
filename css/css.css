@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{color:#444; background:#fcfcfc;font-size:12px;}
+.warp{width:1200px;margin:0 auto;}
+li{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.mt10{margin-top:10px;}
+.mt50{margin-top:50px;}
+.mt30{margin-top:30px;}
+.mt100{margin-top:160px;}
+.mr10{margin-right:10px;}
+.ml30{margin-left:30px;}
+.ml60{margin-left:60px;}
+.hide{sdisplay: inline-block;}
+a{text-decoration:none;}
+
+header{
+	background: #fbfbfb;
+	border-bottom: 1px solid #f1f1f1;
+	/* [disabled]height:20px; */
+	line-height: 20px;
+	width: 100%;
+	color: #bbb;
+}
+footer{ background:#e1e1e1;border-top:5px solid #96d2ff; height:50px; line-height:50px;text-align:center;width:100%;}
+.topBanner{background:url(../images/index.png)  top center no-repeat;width:100%;height:100px;margin:10px 0;}
+.nav{ width:100%; height:40px;line-height:40px;background:#5aa5f0;font-size:14px; font-weight:bold}
+.nav ul{color:#fff;}
+.nav li{ float:left; background:#5aa5f0; cursor:pointer}
+.nav li a{ background:#5aa5f0;display:block; color:#fff; padding:0 20px;}
+.nav li a:hover, .nav .on{ background:#1379ec;}
+.dome{width:100%;}
+#more_information{color:#444; font-size:20px; font-family:"Times New Roman", Times, serif;text-align: center; width: 100%;display: block}
+.teacher{width:1200px;background:#FFFFFF;}
+.teacher ul{width:1200px;}
+.teacher li{float:left;width:400px;overflow:hidden ; cursor:pointer;}
+
+.initial_img{width:400px; height:280px;}
+.teacher .tips .title{color:#9C3; font-size:48px; font-family:"Times New Roman", Times, serif; font-weight:bold;line-height:1;text-align: center;}
+.teacher .tips p{color:#444; font-size:28px; font-family:"Times New Roman", Times, serif; font-weight:bold;line-height:1;text-align: center;}
+.teacher .tips{width:100%;;height:200px; color:#000; float:left;padding:20px;box-sizing: border-box;border:1px solid #ddd; line-height: 2}
+.teacher .tips b{color: #9c3; padding:10px 0;font-size: 20px; }
+.teacher .on{width:1200px; !important }
+.teacher .name{text-align:center; font-size:24px; font-weight:bold; color:#996}
+.massage{border:1px solid #f1f1f1;height:418px;margin-top:10px;line-height:30px;overflow:hidden;}
+.massage.left{margin-right:10px; width:588px;}
+.massage.right{ width:598px;}
+.massage dt{ background:#5aa5f0;font-weight:bold;color:#fff;font-size:14px;margin-bottom:10px; height:40px;line-height:40px;}
+.massage dt,.massage dd{padding-left:10px;width:100%;overflow:hidden; }
+.massage dd{ height:30px;}
+.massage dd a:hover{color:#1379ec;text-decoration:underline;}
+
+.activity{position:relative;}
+.activity_left_top{height:477px; width:800px;}
+.activity_right_top{height:477px; width:330px;}
+.activity_left_bottom{height:477px; width:800px;}
+.activity_right_bottom{height:477px; width:300px;}
+.activity_left_top ul{border:2px solid #FFFFFF; position:absolute; top:0; left:0;}
+.activity_left_top li{width:860px;float:left;overflow:hidden ; cursor:pointer; position:absolute; top:0; left:0}
+.activity_right_bottom ul{border:2px solid #FFFFFF; position:absolute; top:480px; left:320px;}
+.activity_right_bottom li{width:860px;float:left;overflow:hidden ; cursor:pointer; position:absolute; top:0; left:0}
+
+
+#activity_word1{font-family:"Times New Roman", Times, serif; color:#999; font-weight:bold; font-size:24px;text-align:justify;}
+#activity_word2{font-family:"Times New Roman", Times, serif; color:#999; font-weight:bold; font-size:24px;text-align:justify;}
+.join{ width:100px; height:54px; background-color:#000; color:#FFF; font-size:36px; padding-top:10px; padding-left:10px; border-radius:10px;}
+
+
+.feedback_form{padding:10px 60px 20px 60px;}
+/*#feedback_form p{ width: 50px; text-align: right;}*/
+#feedback_information h2{font-family:"Times New Roman", Times, serif; color:#999; font-weight:bold; font-size:24px; padding:10px 10px 10px 10px;}
+
+
+.contact_detail{overflow:hidden;}
+.contact li{font-size:24px;}
+
+.contTitle{padding:10px; color:#1379ec; font-size:20px; }
+.contactTitle{height:40px; font-size:40px; }
+.contactTetles{height: 20px;margin-top:-5px; padding-left:20px; color:#9C3;font-size: 20px;padding-bottom:20px;}
+.contment{font-size: 14px; text-align: justify; color: #333; line-height:1.5;padding-right:310px;background: url("../images/infoBg.jpg") top right no-repeat ;}
+
+.contactUs{margin:20px;padding-bottom:20px;}
+.contactUs h3{padding-left:20px; font-size: 40px; color:#1379ec;border-bottom:1px solid #eee; }
+.contactUs .info{padding:20px;clear: both;width:800px; }
+.contactUs .infobt{padding:10px; }
+.contactUs .info .left{ padding:20px;float: left; background: #444; }
+.contactUs .info .right{float: left;margin-left:20px; line-height:1.5;font-size:16px; width: 700px;}
+.contactUs .info .right li{margin-right:20px;float: left; font-size: 14px;}
+.contactUs .info .left span{background: url("../images/contact-sprit.png") no-repeat ; width: 34px ; height: 34px; display: block;margin: 0 auto;}
+.contactUs .info .adds{background-position: 0 0;}
+.contactUs .tel{background-position:-34px 0 !important;}
+.contactUs .email{background-position:-68px 0 !important;}
+.contactUs .pt20{padding-top:20px;}
+
+.contShol{ width:100%;padding:20px; box-sizing: border-box;clear: both;border:1px solid #eee;}
+.contShol .leftTitle{width:100%;padding:20px;text-align: center; font-size: 30px; color: #9c3}
+.contShol .leftPic img{width:447px;}
+.contSholTest {padding-left:460px;background:url(../images/shoolPic.jpg) no-repeat;width:700px; font-size: 16px; line-height: 1.5; text-align: justify;}
+.heigt10{padding:5px 0; width: 100%;}
+
+#my_area_birthday{width:100px;}
+
+
+#user_management_table{ border:1px solid #999;border-collapse:collapse;	}
+#user_management_table td{ border:1px solid #999; width:100px; text-align:center;}
+#user_management_table th{ border:1px solid #999; text-align:center;}
+#user_management_table .id{width:30px;}
+#user_management_table .email{width:200px;}

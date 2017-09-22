@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <script src="js/jquery-1.11.0.min.js"></script>
+ <script src="js/js.js"></script>
+ <link href="css/css.css" rel="stylesheet" type="text/css">
+<title>Sign Up</title>
+</head>
+<body>
+<form id="sign_up_form">
+<table>
+ <tr>
+  <td> <label for="username">Username :</label> </td> <td> <input type="text" id="username" name="username" /></td>
+ </tr>
+ 
+ <tr>
+  <td> <label for="password">Password :</label> </td> <td> <input type="password" id="password" name="password" /></td>
+ </tr>
+ 
+ <tr>
+  <td> <label for="re_password">Re_Password :</label> </td> <td> <input type="password" id="re_password" name="re_password" /></td>
+ </tr> 
+
+ <tr>
+  <td> <label for="firstname">Firstname :</label> </td> <td> <input type="text" id="firstname" name="firstname" /></td>
+ </tr>
+ 
+ <tr>
+  <td> <label for="lastname">Lastname :</label> </td> <td> <input type="text" id="lastname" name="lastname" /></td>
+ </tr> 
+ 
+ <tr>
+  <td> <label for="email">Email :</label> </td> <td> <input type="email" id="email" name="email" /></td>
+ </tr>  
+
+ <tr>
+  <td> <label for="birthday">Birthday :</label> </td> <td>year: <select id="year" name="year"></select> <span id="month_text">month:</span> <select id="month" name="month"></select> <span id="day_text">day:</span> <select id="day" name="day"></select></td>
+ </tr>  
+ 
+ <tr>
+ <td><input type="button" value="register" name="submit"  onclick="register_submit()"/></td>
+ <td><input type="reset" value="reset" name="reset" /></td>
+ </tr>
+
+</table>
+
+
+</form>
+<script>
+
+
+
+
+/*
+ *  set the date drop lists for users' birthday
+ *
+ */
+
+
+$("#month").hide();
+$("#day").hide();
+$("#month_text").hide();
+$("#day_text").hide();
+var i = 1900;
+var j = 1;
+var k;
+var year;
+var month;
+var day;
+
+while (i <= 2016){
+$("#year").append("<option value='"+i+"'>"+i+"</option>"); 
+i++;
+};
+
+ $("#year").change(function(){
+	 while (j <= 12){
+     $("#month").append("<option value='"+j+"'>"+j+"</option>"); 
+     j++;
+     }; 
+	 $("#month_text").show();$("#month").show();
+	 });
+	 
+ $("#month").change(function(){
+	 year = $("#year").val();
+	 month = $("#month ").val();
+	 
+	 
+	 if( month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+		 day = 31;
+	 }
+	 else if (month == 4 || month == 6 || month == 9 || month == 11){
+		 day = 30;
+	 }
+	 else if ((month == 2)&&( (year%400 == 0) || ((year%100 != 0 )&&(year%4 == 0)     )         )    ){
+		 day = 29;
+	 }
+	 else{
+		 day = 28;
+	 }
+	 $("#day").empty();
+	 k = 1;
+	 while (k <= day){
+       $("#day").append("<option value='"+k+"'>"+k+"</option>"); 
+       k++;
+     };
+	 $("#day_text").show();$("#day").show();
+});
+
+</script>
+</body>
+</html>
